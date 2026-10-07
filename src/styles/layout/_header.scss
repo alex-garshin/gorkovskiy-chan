@@ -1,0 +1,152 @@
+.header {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 0 48px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: var(--container);
+  margin: 0 auto;
+  min-height: var(--header-h);
+  padding: 15px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  background: var(--color-forest);
+  color: var(--color-white);
+}
+
+.header__logo {
+  flex: 0 0 auto;
+}
+
+.header__logo img {
+  width: auto;
+  height: 103px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex: 1 1 auto;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.header__nav a {
+  color: var(--color-white);
+  transition: color 0.25s ease;
+}
+
+.header__nav a:hover {
+  color: var(--color-beige);
+}
+
+.header__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-beige);
+  flex-shrink: 0;
+}
+
+.header__aside {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+.header__contacts {
+  text-align: right;
+}
+
+.header__phone {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  white-space: nowrap;
+  color: var(--color-white);
+  transition: color 0.25s ease;
+}
+
+.header__phone:hover {
+  color: var(--color-beige);
+}
+
+.header__address {
+  margin: 2px 0 0;
+  font-size: 15px;
+  line-height: 1.25;
+  color: var(--color-address);
+}
+
+.header__book {
+  padding: 0 22px;
+  white-space: nowrap;
+}
+
+.burger.header__burger {
+  display: none;
+}
+
+.header__account:hover {
+  border-color: var(--color-white);
+}
+
+.header__account:hover .account__icon {
+  background-color: var(--color-white);
+}
+
+@media (max-width: 1479px) {
+  .header {
+    padding: 0 24px;
+    z-index: 40;
+  }
+
+  .header__inner {
+    gap: 16px;
+    min-height: 0;
+    padding: 12px 20px;
+  }
+
+  .header__logo img {
+    height: 72px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__address,
+  .account.header__account {
+    display: none;
+  }
+
+  .header__phone {
+    font-size: 22px;
+  }
+
+  .header__aside {
+    margin-left: auto;
+  }
+
+  .burger.header__burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
