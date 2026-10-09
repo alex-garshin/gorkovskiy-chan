@@ -1,0 +1,167 @@
+.banya {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  padding: 80px 48px;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.banya__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.banya__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banya__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 52, 39, 0.88) 0%,
+    rgba(36, 52, 39, 0.72) 34%,
+    rgba(36, 52, 39, 0.32) 64%,
+    rgba(36, 52, 39, 0.12) 100%
+  );
+}
+
+.banya__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.banya__content {
+  max-width: 780px;
+}
+
+.banya__title {
+  margin: 0 0 50px;
+  font-size: 70px;
+  line-height: 1.05;
+  color: var(--color-white);
+}
+
+.banya__text {
+  margin: 0 0 75px;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--color-white);
+}
+
+.banya__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 65px;
+}
+
+.banya__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.banya__price-value {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media (max-width: 1479px) {
+  .banya {
+    min-height: 420px;
+    padding: 64px 24px;
+  }
+
+  .banya__title {
+    font-size: 44px;
+  }
+
+  .banya__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .banya__price {
+    font-size: 18px;
+  }
+
+  .banya__price-value {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banya {
+    align-items: stretch;
+    min-height: 0;
+    padding: 56px 20px calc(var(--bar-h) + 40px);
+  }
+
+  .banya__bg::after {
+    background: linear-gradient(
+      rgba(36, 52, 39, 0.78) 0%,
+      rgba(36, 52, 39, 0.72) 45%,
+      rgba(36, 52, 39, 0.68) 100%
+    );
+  }
+
+  .banya__content {
+    max-width: none;
+  }
+
+  .banya__title {
+    margin-bottom: 28px;
+    font-size: 48px;
+    line-height: 1.05;
+  }
+
+  .banya__text {
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .banya__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    margin-bottom: 36px;
+  }
+
+  .banya__actions .btn {
+    width: 100%;
+  }
+
+  .banya__price {
+    gap: 6px;
+    font-size: 16px;
+  }
+
+  .banya__price-value {
+    font-size: 28px;
+  }
+}

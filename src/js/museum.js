@@ -2,7 +2,7 @@ import Swiper from 'swiper'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 
-const root = document.querySelector('[data-scenarios]')
+const root = document.querySelector('[data-museum-slider]')
 
 if (root) {
   new Swiper(root.querySelector('.swiper'), {
@@ -14,11 +14,16 @@ if (root) {
     observer: true,
     observeParents: true,
     navigation: {
-      prevEl: root.querySelector('[data-scenarios-prev]'),
-      nextEl: root.querySelector('[data-scenarios-next]'),
+      prevEl: root.querySelector('[data-museum-prev]'),
+      nextEl: root.querySelector('[data-museum-next]'),
     },
     breakpoints: {
       768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1480: {
+        slidesPerView: 2,
         spaceBetween: 24,
       },
     },

@@ -1,15 +1,20 @@
-@use 'base/fonts';
-@use 'base/reset';
-@use 'base/variables';
-@use 'base/typography';
-@use 'components/button';
+@use 'fonts';
+@use 'common';
+@use 'components';
+
 @use 'layout/header';
 @use 'layout/bar';
 @use 'layout/hero';
 @use 'layout/features';
-@use 'layout/scenarios'; // slider section
+@use 'layout/scenarios';
 @use 'layout/houses';
 @use 'layout/story';
 @use 'layout/quote';
-
-
+@use 'layout/museum';
+@use 'layout/easter';
+@use 'layout/activities';
+@use 'layout/banya';
+@use 'layout/events';
+@use 'layout/certificate';
+@use 'layout/offers';
+@use 'layout/celebration';

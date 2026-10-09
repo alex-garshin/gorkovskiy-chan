@@ -53,7 +53,6 @@ document.querySelectorAll('[data-houses-slider]').forEach((root) => {
     modules: [Navigation],
     slidesPerView: 1.12,
     spaceBetween: 12,
-    loop: true,
     speed: 550,
     grabCursor: true,
     observer: true,

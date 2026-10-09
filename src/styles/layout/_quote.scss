@@ -11,16 +11,29 @@
 .quote__bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(36, 52, 39, 0.82) 0%,
-      rgba(36, 52, 39, 0.62) 38%,
-      rgba(36, 52, 39, 0.28) 68%,
-      rgba(36, 52, 39, 0.18) 100%
-    ),
-    url('/img/bg/par.jpg') center / cover no-repeat;
   z-index: 0;
+  overflow: hidden;
+}
+
+.quote__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.quote__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 52, 39, 0.82) 0%,
+    rgba(36, 52, 39, 0.62) 38%,
+    rgba(36, 52, 39, 0.28) 68%,
+    rgba(36, 52, 39, 0.18) 100%
+  );
 }
 
 .quote__inner {
@@ -100,20 +113,20 @@
   .quote__inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
+    gap: 50px;
   }
 
   .quote__text {
     max-width: none;
-    font-size: 28px;
+    font-size: 40px;
   }
 
   .quote__avatar {
-    width: 68px;
-    height: 68px;
+    width: 110px;
+    height: 110px;
   }
 
   .quote__bio {
-    font-size: 16px;
+    font-size: 15px;
   }
 }

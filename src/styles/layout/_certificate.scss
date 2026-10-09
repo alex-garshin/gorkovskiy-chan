@@ -1,0 +1,140 @@
+.certificate {
+  padding: 80px 48px 100px;
+  background: var(--color-cream);
+  color: #3d2616;
+}
+
+.certificate__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.certificate__head {
+  margin-bottom: 36px;
+}
+
+.certificate__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 720px;
+  color: var(--color-white);
+}
+
+.certificate__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.certificate__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.certificate__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 52, 39, 0.88) 0%,
+    rgba(36, 52, 39, 0.72) 36%,
+    rgba(36, 52, 39, 0.28) 62%,
+    rgba(36, 52, 39, 0.08) 100%
+  );
+}
+
+.certificate__form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(600px + 80px);
+  padding: 48px 40px;
+}
+
+.certificate__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.certificate__fields .field:not(.field--inline) .field__input {
+  width: 600px;
+  max-width: 100%;
+}
+
+.certificate__form-title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.05;
+  color: var(--color-white);
+}
+
+.certificate__form .btn {
+  align-self: flex-start;
+  min-width: 260px;
+}
+
+@media (max-width: 1479px) {
+  .certificate {
+    padding: 64px 24px 80px;
+  }
+
+  .certificate__card {
+    min-height: 640px;
+  }
+
+  .certificate__form {
+    max-width: calc(600px + 56px);
+    padding: 36px 28px;
+  }
+
+  .certificate__form-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate {
+    padding: 40px 16px calc(var(--bar-h) + 40px);
+  }
+
+  .certificate__head {
+    margin-bottom: 24px;
+  }
+
+  .certificate__card {
+    min-height: 0;
+  }
+
+  .certificate__bg::after {
+    background: linear-gradient(
+      rgba(36, 52, 39, 0.82) 0%,
+      rgba(36, 52, 39, 0.76) 50%,
+      rgba(36, 52, 39, 0.7) 100%
+    );
+  }
+
+  .certificate__form {
+    max-width: none;
+    padding: 28px 20px;
+  }
+
+  .certificate__form-title {
+    font-size: 32px;
+  }
+
+  .certificate__form .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}

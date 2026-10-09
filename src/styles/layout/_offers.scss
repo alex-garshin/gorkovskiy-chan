@@ -1,0 +1,251 @@
+.offers {
+  padding: 80px 48px 100px;
+  background: var(--color-cream);
+  color: #3d2616;
+}
+
+.offers__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.offers__head {
+  margin-bottom: 36px;
+}
+
+.offers__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.offer {
+  box-sizing: border-box;
+  min-height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.offer--photo {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-white);
+}
+
+.offer__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.offer__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.offer__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 52, 39, 0.08) 0%,
+    rgba(36, 52, 39, 0.35) 42%,
+    rgba(36, 52, 39, 0.88) 100%
+  );
+}
+
+.offer--photo .offer__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  padding: 36px 32px;
+}
+
+.offer--photo .offer__title {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.offer--photo .offer__text {
+  margin: 0;
+  max-width: 520px;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--color-white);
+}
+
+.offer--photo .offer__note {
+  margin: 8px 0 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.offer--light {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 36px 32px;
+  background: #f5efe6;
+  color: #3d2616;
+}
+
+.offer__intro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px 24px;
+}
+
+.offer--light .offer__title {
+  margin: 0;
+  color: #3d2616;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.offer__aside {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #3d2616;
+}
+
+.offer--light .offer__text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #3d2616;
+}
+
+.offer__tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: auto;
+}
+
+.offer__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  padding: 16px 20px;
+  border-radius: 15px;
+  background: #e4dace;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  color: #3d2616;
+}
+
+.offer--light .offer__note {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #3d2616;
+}
+
+@media (max-width: 1479px) {
+  .offers {
+    padding: 64px 24px 80px;
+  }
+
+  .offer {
+    min-height: 440px;
+  }
+
+  .offer--photo .offer__content,
+  .offer--light {
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .offer--photo .offer__title,
+  .offer--light .offer__title {
+    font-size: 28px;
+  }
+
+  .offer--photo .offer__text,
+  .offer--light .offer__text,
+  .offer__tag {
+    font-size: 16px;
+  }
+
+  .offer__aside {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offers {
+    padding: 40px 16px calc(var(--bar-h) + 40px);
+  }
+
+  .offers__head {
+    margin-bottom: 24px;
+  }
+
+  .offers__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .offer {
+    min-height: 0;
+  }
+
+  .offer--photo {
+    min-height: 420px;
+  }
+
+  .offer--photo .offer__content,
+  .offer--light {
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .offer__tags {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .offer__tag {
+    min-height: 56px;
+    font-size: 15px;
+  }
+
+  .offer--photo .offer__text,
+  .offer--light .offer__text,
+  .offer--photo .offer__note,
+  .offer--light .offer__note {
+    font-size: 14px;
+  }
+
+  .offer__aside {
+    font-size: 16px;
+  }
+}
