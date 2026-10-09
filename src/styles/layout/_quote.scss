@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 480px;
+  min-height: 400px;
   padding: 80px 48px;
   color: var(--color-white);
   overflow: hidden;
@@ -107,7 +107,7 @@
 @media (max-width: 767px) {
   .quote {
     min-height: 0;
-    padding: 48px 16px calc(var(--bar-h) + 32px);
+    padding: 40px 16px;
   }
 
   .quote__inner {

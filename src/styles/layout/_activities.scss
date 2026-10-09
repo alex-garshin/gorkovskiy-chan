@@ -1,5 +1,5 @@
 .activities {
-  padding: 80px 48px 100px;
+  padding: 80px 48px;
   background: var(--color-cream);
   overflow-x: clip;
   color: #3d2616;
@@ -100,6 +100,10 @@
   color: #3d2616;
 }
 
+.activities__extra--free {
+  display: none;
+}
+
 .paid {
   display: grid !important;
   grid-template-columns: minmax(0, calc((100% - 24px) / 2)) minmax(0, 1fr);
@@ -182,7 +186,7 @@
 
 @media (max-width: 1479px) {
   .activities {
-    padding: 64px 24px 80px;
+    padding: 64px 24px;
   }
 
   .activity {
@@ -222,7 +226,7 @@
 
 @media (max-width: 767px) {
   .activities {
-    padding: 40px 16px calc(var(--bar-h) + 40px);
+    padding: 40px 16px;
   }
 
   .activities__head {
@@ -286,5 +290,11 @@
   .activities__extra {
     margin-bottom: 16px;
     font-size: 16px;
+    font-weight: 400;
+    color: #8a7a68;
+  }
+
+  .activities__extra--free {
+    display: block;
   }
 }

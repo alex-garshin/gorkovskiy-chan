@@ -1,5 +1,5 @@
 .events {
-  padding: 80px 48px 100px;
+  padding: 80px 48px;
   background: var(--color-cream);
   overflow-x: clip;
   color: #3d2616;
@@ -113,7 +113,7 @@
 
 @media (max-width: 1479px) {
   .events {
-    padding: 64px 24px 80px;
+    padding: 64px 24px;
   }
 
   .events__lead {
@@ -136,7 +136,7 @@
 
 @media (max-width: 767px) {
   .events {
-    padding: 40px 16px calc(var(--bar-h) + 40px);
+    padding: 40px 16px;
   }
 
   .events__head {

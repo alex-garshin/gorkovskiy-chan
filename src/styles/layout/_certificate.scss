@@ -1,5 +1,5 @@
 .certificate {
-  padding: 80px 48px 100px;
+  padding: 80px 48px;
   background: var(--color-cream);
   color: #3d2616;
 }
@@ -86,7 +86,7 @@
 
 @media (max-width: 1479px) {
   .certificate {
-    padding: 64px 24px 80px;
+    padding: 64px 24px;
   }
 
   .certificate__card {
@@ -105,7 +105,7 @@
 
 @media (max-width: 767px) {
   .certificate {
-    padding: 40px 16px calc(var(--bar-h) + 40px);
+    padding: 40px 16px;
   }
 
   .certificate__head {
@@ -114,26 +114,55 @@
 
   .certificate__card {
     min-height: 0;
+    border: 1px solid rgba(228, 218, 206, 0.45);
   }
 
   .certificate__bg::after {
     background: linear-gradient(
-      rgba(36, 52, 39, 0.82) 0%,
-      rgba(36, 52, 39, 0.76) 50%,
-      rgba(36, 52, 39, 0.7) 100%
+      180deg,
+      rgba(36, 52, 39, 0.94) 0%,
+      rgba(36, 52, 39, 0.88) 42%,
+      rgba(36, 52, 39, 0.45) 68%,
+      rgba(36, 52, 39, 0.12) 100%
     );
   }
 
   .certificate__form {
     max-width: none;
-    padding: 28px 20px;
+    gap: 22px;
+    padding: 28px 20px 220px;
   }
 
   .certificate__form-title {
     font-size: 32px;
   }
 
+  .certificate__fields {
+    gap: 22px;
+  }
+
+  .certificate__fields .field--inline {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .certificate__fields .field--inline .field__label {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .certificate__fields .field--inline .field__input {
+    flex: 0 0 42%;
+    width: 42%;
+    max-width: 160px;
+  }
+
   .certificate__form .btn {
+    align-self: stretch;
     width: 100%;
     min-width: 0;
   }

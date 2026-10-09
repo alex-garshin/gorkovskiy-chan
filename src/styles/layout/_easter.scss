@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 420px;
+  min-height: 360px;
   padding: 80px 48px;
   color: var(--color-white);
   overflow: hidden;
@@ -135,7 +135,7 @@
 @media (max-width: 767px) {
   .easter {
     min-height: 0;
-    padding: 48px 16px calc(var(--bar-h) + 32px);
+    padding: 40px 16px;
   }
 
   .easter__inner {

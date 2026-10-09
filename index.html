@@ -1136,6 +1136,7 @@
           <header class="section-head section-head--aside museum__head">
             <h2 class="h2 section-head__title">Музей под открытым небом</h2>
             <p class="section-head__aside">Более 150 арт-объектов на территории</p>
+            <div class="section-head__line" aria-hidden="true"></div>
           </header>
 
           <div class="museum__intro">
@@ -1280,6 +1281,7 @@
             <h2 class="h2 section-head__title">Чем заняться</h2>
             <p class="section-head__aside">в нашей этно-деревне</p>
           </header>
+          <p class="activities__extra activities__extra--free">Бесплатно:</p>
         </div>
 
         <div class="activities__slider" data-activities-slider>
@@ -1662,7 +1664,7 @@
 
               <div class="certificate__fields">
                 <label class="field">
-                  <span class="field__label">Имя</span>
+                  <span class="field__label">Имя:</span>
                   <input
                     class="field__input"
                     type="text"
@@ -1673,7 +1675,7 @@
                 </label>
 
                 <label class="field field--error">
-                  <span class="field__label">Номер телефона</span>
+                  <span class="field__label">Номер телефона:</span>
                   <input
                     class="field__input"
                     type="tel"
@@ -1687,7 +1689,7 @@
                 </label>
 
                 <label class="field">
-                  <span class="field__label">Почта</span>
+                  <span class="field__label">Почта:</span>
                   <input
                     class="field__input"
                     type="email"
@@ -1796,31 +1798,58 @@
             </div>
           </div>
 
-          <div class="celebration__grid">
-            <article class="celebration-card">
-              <img src="/img/dr.png" alt="Дни рождения" />
-              <h3 class="celebration-card__title">Дни рождения</h3>
-            </article>
+          <div class="celebration__slider" data-celebration-slider>
+            <div class="swiper">
+              <div class="swiper-wrapper celebration__grid">
+                <article class="celebration-card swiper-slide">
+                  <img src="/img/dr.png" alt="Дни рождения" />
+                  <h3 class="celebration-card__title">Дни рождения</h3>
+                </article>
 
-            <article class="celebration-card">
-              <img src="/img/bg/form-bg.png" alt="Свадьбы и годовщины" />
-              <h3 class="celebration-card__title">Свадьбы и годовщины</h3>
-            </article>
+                <article class="celebration-card swiper-slide">
+                  <img src="/img/bg/form-bg.png" alt="Свадьбы и годовщины" />
+                  <h3 class="celebration-card__title">Свадьбы и годовщины</h3>
+                </article>
 
-            <article class="celebration-card">
-              <img src="/img/bg/par.jpg" alt="Корпоративы" />
-              <h3 class="celebration-card__title">Корпоративы</h3>
-            </article>
+                <article class="celebration-card swiper-slide">
+                  <img src="/img/bg/par.jpg" alt="Корпоративы" />
+                  <h3 class="celebration-card__title">Корпоративы</h3>
+                </article>
 
-            <article class="celebration-card">
-              <img src="/img/wheel-of-rebirth.png" alt="Ретриты и выездные практики" />
-              <h3 class="celebration-card__title">Ретриты и выездные практики</h3>
-            </article>
+                <article class="celebration-card swiper-slide">
+                  <img src="/img/wheel-of-rebirth.png" alt="Ретриты и выездные практики" />
+                  <h3 class="celebration-card__title">Ретриты и выездные практики</h3>
+                </article>
 
-            <article class="celebration-card">
-              <img src="/img/poni.png" alt="Семейные праздники" />
-              <h3 class="celebration-card__title">Семейные праздники</h3>
-            </article>
+                <article class="celebration-card swiper-slide">
+                  <img src="/img/poni.png" alt="Семейные праздники" />
+                  <h3 class="celebration-card__title">Семейные праздники</h3>
+                </article>
+              </div>
+            </div>
+
+            <button
+              class="slider-nav slider-nav--prev"
+              type="button"
+              data-celebration-prev
+              aria-label="Предыдущий слайд"
+            >
+              <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+                <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+                <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              </svg>
+            </button>
+            <button
+              class="slider-nav slider-nav--next"
+              type="button"
+              data-celebration-next
+              aria-label="Следующий слайд"
+            >
+              <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+                <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+                <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              </svg>
+            </button>
           </div>
 
           <a class="btn btn-or celebration__action" href="#">Узнать условия аренды</a>
@@ -1834,6 +1863,7 @@
     <script type="module" src="/src/js/museum.js"></script>
     <script type="module" src="/src/js/activities.js"></script>
     <script type="module" src="/src/js/events.js"></script>
+    <script type="module" src="/src/js/celebration.js"></script>
     <script type="module" src="/src/js/phone-mask.js"></script>
   </body>
 </html>

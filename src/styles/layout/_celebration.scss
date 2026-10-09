@@ -1,5 +1,5 @@
 .celebration {
-  padding: 80px 48px 100px;
+  padding: 80px 48px;
   background: var(--color-cream);
   color: #3d2616;
 }
@@ -35,27 +35,22 @@
   }
 }
 
-.celebration__grid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 20px;
+.celebration__slider {
+  position: relative;
   margin-bottom: 36px;
+}
+
+.celebration__slider .swiper {
+  overflow: visible;
 }
 
 .celebration-card {
   position: relative;
   display: block;
-  grid-column: span 2;
   min-height: 280px;
   border-radius: 20px;
   overflow: hidden;
   color: var(--color-white);
-}
-
-.celebration-card:nth-child(1),
-.celebration-card:nth-child(2) {
-  grid-column: span 3;
-  min-height: 340px;
 }
 
 .celebration-card img {
@@ -94,13 +89,39 @@
   color: var(--color-white);
 }
 
+.celebration__slider .slider-nav {
+  display: none;
+}
+
 .celebration__action {
   align-self: flex-start;
 }
 
-@media (max-width: 1479px) {
+@media (min-width: 768px) {
+  .celebration__slider .swiper-wrapper.celebration__grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 20px;
+    transform: none !important;
+    box-sizing: border-box;
+  }
+
+  .celebration-card {
+    grid-column: span 2;
+    width: auto;
+    height: auto;
+  }
+
+  .celebration-card:nth-child(1),
+  .celebration-card:nth-child(2) {
+    grid-column: span 3;
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 1479px) and (min-width: 768px) {
   .celebration {
-    padding: 64px 24px 80px;
+    padding: 64px 24px;
   }
 
   .celebration__intro {
@@ -112,9 +133,12 @@
     font-size: 18px;
   }
 
-  .celebration__grid {
-    gap: 16px;
+  .celebration__slider {
     margin-bottom: 28px;
+  }
+
+  .celebration__slider .swiper-wrapper.celebration__grid {
+    gap: 16px;
   }
 
   .celebration-card {
@@ -136,7 +160,7 @@
 
 @media (max-width: 767px) {
   .celebration {
-    padding: 40px 16px calc(var(--bar-h) + 40px);
+    padding: 40px 16px calc(var(--bar-h) + 24px);
   }
 
   .celebration__head {
@@ -150,21 +174,23 @@
     margin-bottom: 24px;
   }
 
+  .celebration__intro .section-head__line {
+    display: none;
+  }
+
   .celebration__col {
     font-size: 16px;
   }
 
-  .celebration__grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .celebration__slider {
+    width: calc(100% + 16px);
+    margin-right: -16px;
     margin-bottom: 24px;
   }
 
-  .celebration-card,
-  .celebration-card:nth-child(1),
-  .celebration-card:nth-child(2) {
-    grid-column: auto;
-    min-height: 220px;
+  .celebration-card {
+    min-height: 280px;
+    height: 280px;
   }
 
   .celebration-card__title {
@@ -172,6 +198,10 @@
     right: 16px;
     bottom: 16px;
     font-size: 16px;
+  }
+
+  .celebration__slider .slider-nav {
+    display: grid;
   }
 
   .celebration__action {

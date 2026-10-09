@@ -1,5 +1,5 @@
 .museum {
-  padding: 80px 48px 100px;
+  padding: 80px 48px;
   background: var(--color-cream);
   overflow-x: clip;
 }
@@ -139,7 +139,7 @@
 
 @media (max-width: 1479px) {
   .museum {
-    padding: 64px 24px 80px;
+    padding: 64px 24px;
   }
 
   .museum__intro,
@@ -167,11 +167,15 @@
 
   .museum__intro,
   .museum__example {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .museum__intro {
     margin-bottom: 24px;
+  }
+
+  .museum__intro p {
+    font-size: 13px;
   }
 
   .exhibit {
@@ -203,6 +207,10 @@
   }
 
   .exhibit__text {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .exhibit__text p {
+    font-size: 13px;
   }
 }

@@ -1,5 +1,5 @@
 .houses {
-  padding: 40px 48px 100px;
+  padding: 0 48px 80px;
   background: var(--color-cream);
 }
 
@@ -25,9 +25,10 @@
 .houses__label {
   margin: 0 0 16px;
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.2;
+  text-transform: none;
   color: #3d2616;
 }
 
@@ -234,7 +235,7 @@
 
 @media (max-width: 1479px) {
   .houses {
-    padding: 32px 24px 72px;
+    padding: 0 24px 64px;
   }
 
   .houses__head {
@@ -272,7 +273,7 @@
 
 @media (max-width: 767px) {
   .houses {
-    padding: 24px 16px calc(var(--bar-h) + 40px);
+    padding: 0 16px 40px;
   }
 
   .houses__head {
