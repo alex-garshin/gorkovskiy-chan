@@ -165,6 +165,18 @@
     min-height: var(--bar-h);
     padding: 16px 30px calc(16px + env(safe-area-inset-bottom, 0px));
     background: var(--color-forest);
+    transform: translateY(calc(100% + env(safe-area-inset-bottom, 0px)));
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .is-bar-visible .bar {
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .bar__logo {
@@ -194,5 +206,9 @@
     top: auto;
     padding: 28px 24px 20px;
     transform: translateY(100%);
+  }
+
+  .is-bar-visible.is-menu-open .mnav {
+    transform: translateY(0);
   }
 }

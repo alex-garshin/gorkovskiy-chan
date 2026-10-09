@@ -494,3 +494,80 @@
     height: 20px;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Reveal — появление при скролле                                      */
+/* Использование: class="reveal" + модификатор направления             */
+/*   reveal          — снизу вверх (по умолчанию)                      */
+/*   reveal--left    — слева                                           */
+/*   reveal--right   — справа                                          */
+/*   reveal--fade    — только прозрачность                             */
+/*   reveal--scale   — лёгкий scale                                    */
+/* Родитель reveal-stagger — задержка между дочерними .reveal          */
+/* ------------------------------------------------------------------ */
+
+.reveal {
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal:not(.is-revealed) {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+
+.reveal--left:not(.is-revealed) {
+  transform: translate3d(-32px, 0, 0);
+}
+
+.reveal--right:not(.is-revealed) {
+  transform: translate3d(32px, 0, 0);
+}
+
+.reveal--fade:not(.is-revealed) {
+  transform: none;
+}
+
+.reveal--scale:not(.is-revealed) {
+  transform: scale(0.96);
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-stagger > .reveal:nth-child(1) {
+  --reveal-delay: 0ms;
+}
+
+.reveal-stagger > .reveal:nth-child(2) {
+  --reveal-delay: 100ms;
+}
+
+.reveal-stagger > .reveal:nth-child(3) {
+  --reveal-delay: 200ms;
+}
+
+.reveal-stagger > .reveal:nth-child(4) {
+  --reveal-delay: 300ms;
+}
+
+.reveal-stagger > .reveal:nth-child(5) {
+  --reveal-delay: 400ms;
+}
+
+.reveal-stagger > .reveal:nth-child(6) {
+  --reveal-delay: 500ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal:not(.is-revealed) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
