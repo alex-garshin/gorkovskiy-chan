@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   padding: 48px;
-  padding-top: 64px;
+  padding-top: 124px;
   background: var(--color-cream);
 }
 
@@ -55,7 +55,7 @@
 
 @media (max-width: 1479px) {
   .features {
-    padding: 56px 24px 40px;
+    padding: 96px 24px 40px;
   }
 
   .features__inner {
@@ -65,7 +65,7 @@
 
 @media (max-width: 767px) {
   .features {
-    padding: 48px 16px 40px;
+    padding: 72px 16px 40px;
   }
 
   .features__inner {
