@@ -7,7 +7,7 @@
 }
 
 .booking__box {
-  height: 200px;
+  min-height: 200px;
   border-radius: 20px;
   background: var(--color-clay);
 }
@@ -25,7 +25,7 @@
 
 @media (max-width: 767px) {
   .booking {
-    margin-top: -40px;
+    margin-top: -100px;
     padding: 0 16px;
   }
 
