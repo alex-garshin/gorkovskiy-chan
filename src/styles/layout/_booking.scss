@@ -1,0 +1,35 @@
+.booking {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container);
+  margin: -72px auto 0;
+  padding: 0 48px;
+}
+
+.booking__box {
+  height: 200px;
+  border-radius: 20px;
+  background: var(--color-clay);
+}
+
+@media (max-width: 1479px) {
+  .booking {
+    margin-top: -56px;
+    padding: 0 24px;
+  }
+
+  .booking__box {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking {
+    margin-top: -40px;
+    padding: 0 16px;
+  }
+
+  .booking__box {
+    border-radius: 15px;
+  }
+}

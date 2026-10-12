@@ -2,7 +2,7 @@
   padding: 80px 48px;
   background: var(--color-cream);
   overflow-x: clip;
-  color: #3d2616;
+  color: var(--color-wood);
 }
 
 .activities__inner {
@@ -50,8 +50,8 @@
   height: 100%;
   padding: 20px;
   border-radius: 20px;
-  background: #f5efe6;
-  color: #3d2616;
+  background: var(--color-card);
+  color: var(--color-wood);
 }
 
 .activity__media {
@@ -82,13 +82,13 @@
   margin: 0;
   font-size: 50px;
   line-height: 1.1;
-  color: #3d2616;
+  color: var(--color-wood);
 }
 
 .activity__text {
   font-size: 20px;
   line-height: 1.45;
-  color: #3d2616;
+  color: var(--color-wood);
 }
 
 .activities__extra {
@@ -97,7 +97,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3;
-  color: #3d2616;
+  color: var(--color-wood);
 }
 
 .activities__extra--free {
@@ -115,7 +115,7 @@
   min-height: 480px;
   padding: 20px;
   border-radius: 20px;
-  background: #b8a688;
+  background: var(--color-clay-soft);
   color: var(--color-white);
 }
 
@@ -164,9 +164,9 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #dcc2a3;
+  background: var(--color-glow);
   box-shadow:
-    0 0 5px 1px #dcc2a3,
+    0 0 5px 1px var(--color-glow),
     0 0 12px 3px rgba(220, 194, 163, 0.5);
   flex-shrink: 0;
 }
@@ -291,7 +291,7 @@
     margin-bottom: 16px;
     font-size: 16px;
     font-weight: 400;
-    color: #8a7a68;
+    color: var(--color-muted);
   }
 
   .activities__extra--free {

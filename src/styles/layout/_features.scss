@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   padding: 48px;
+  padding-top: 64px;
   background: var(--color-cream);
 }
 
@@ -20,7 +21,7 @@
   gap: 14px;
   padding: 28px 24px;
   border-radius: 15px;
-  background: #f5efe6;
+  background: var(--color-card);
 }
 
 .feature__top {
@@ -54,7 +55,7 @@
 
 @media (max-width: 1479px) {
   .features {
-    padding: 40px 24px;
+    padding: 56px 24px 40px;
   }
 
   .features__inner {
@@ -64,7 +65,7 @@
 
 @media (max-width: 767px) {
   .features {
-    padding: 40px 16px;
+    padding: 48px 16px 40px;
   }
 
   .features__inner {
