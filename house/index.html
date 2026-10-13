@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дом Вождя — Горьковский Чан</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="/" aria-label="Горьковский Чан">
+          <img src="/img/bg/logo.svg" alt="Горьковский Чан" />
+        </a>
+
+        <nav class="header__nav" aria-label="Основная навигация">
+          <a href="/#houses">Домики</a>
+          <span class="header__dot" aria-hidden="true"></span>
+          <a href="/#bath">Баня</a>
+          <span class="header__dot" aria-hidden="true"></span>
+          <a href="/#fun">Развлечения</a>
+        </nav>
+
+        <div class="header__aside">
+          <div class="header__contacts">
+            <a class="header__phone" href="tel:+79302500369">+7-930-250-03-69</a>
+            <p class="header__address">
+              Нижегородская область, Городецкий район,<br />
+              Фалино-Пестово
+            </p>
+          </div>
+          <a class="btn btn-or header__book" href="/#houses">Забронировать</a>
+          <a class="account header__account" href="/#houses" aria-label="Личный кабинет">
+            <span class="account__icon" aria-hidden="true"></span>
+          </a>
+          <button
+            class="burger header__burger"
+            type="button"
+            data-menu
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mnav" data-mnav aria-label="Мобильное меню">
+      <a class="account mnav__account" href="/#houses" aria-label="Личный кабинет">
+        <span class="account__icon" aria-hidden="true"></span>
+      </a>
+      <a href="/#houses">Домики</a>
+      <a href="/#bath">Баня</a>
+      <a href="/#fun">Развлечения</a>
+      <a class="mnav__phone" href="tel:+79302500369">+7-930-250-03-69</a>
+      <p class="mnav__address">
+        Нижегородская область, Городецкий район,<br />
+        Фалино-Пестово
+      </p>
+    </nav>
+
+    <div class="bar">
+      <a class="bar__logo" href="/" aria-label="Горьковский Чан">
+        <img src="/img/bg/logo.svg" alt="" />
+      </a>
+      <a class="btn btn-or bar__book" href="/#houses">Забронировать</a>
+      <button
+        class="burger bar__burger"
+        type="button"
+        data-menu
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <main class="page page--house">
+      <section class="house-hero">
+        <div class="house-hero__bg" aria-hidden="true">
+          <img src="/img/houses/dom-vojdya.png" alt="" />
+        </div>
+        <img
+          class="house-hero__mark"
+          src="/img/bg/logo.svg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="house-hero__body">
+          <img
+            class="house-hero__logo"
+            src="/img/bg/logo.svg"
+            alt="Горьковский Чан"
+          />
+
+          <div class="house-hero__head reveal">
+            <h1 class="h1 house-hero__title">Дом Вождя</h1>
+            <p class="house-hero__price">
+              <span class="house-hero__price-from">от</span>
+              <strong class="house-hero__price-value">21 000</strong>
+              <span class="house-hero__price-unit">руб./ночь</span>
+            </p>
+          </div>
+
+          <p class="house-hero__text reveal">
+            Просторный двухэтажный Барнхаус для компании до 11 гостей с двумя
+            чанами, баней из 200-летней сосны и приватной территорией у озера.
+          </p>
+
+          <ul class="tags house-hero__tags reveal">
+            <li class="tags__item">до 11 чел.</li>
+            <li class="tags__item">5 комнат</li>
+            <li class="tags__item">120 м2</li>
+            <li class="tags__item">Баня</li>
+            <li class="tags__item">Чан</li>
+            <li class="tags__item">Пруд</li>
+            <li class="tags__item">Камин</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="booking" id="booking" aria-hidden="true">
+        <div class="booking__box"></div>
+      </div>
+
+      <section class="house-gallery" aria-label="Фотографии дома">
+        <div class="house-gallery__inner">
+          <div class="house-gallery__slider" data-house-gallery>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="house-gallery__media">
+                    <img src="/img/houses/dom-vojdya.png" alt="Дом Вождя" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="house-gallery__media">
+                    <img src="/img/houses/XXXL-2.png" alt="Дом Вождя — интерьер" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="house-gallery__media">
+                    <img src="/img/houses/XXXL-3.png" alt="Дом Вождя — территория" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="house-gallery__media">
+                    <img src="/img/houses/XXXL-4.png" alt="Дом Вождя — вид" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="house-gallery__media">
+                    <img src="/img/houses/sun.png" alt="Дом Вождя — фасад" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="slider-nav slider-nav--prev"
+              type="button"
+              data-house-gallery-prev
+              aria-label="Предыдущий слайд"
+            >
+              <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+                <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+                <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              </svg>
+            </button>
+            <button
+              class="slider-nav slider-nav--next"
+              type="button"
+              data-house-gallery-next
+              aria-label="Следующий слайд"
+            >
+              <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+                <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+                <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="house-video" id="house-video" aria-label="Видео-обзор">
+        <div class="house-video__inner">
+          <div class="house-video__card">
+            <div class="house-video__bg" aria-hidden="true">
+              <img src="/img/houses/dom-vojdya-img.png" alt="" />
+            </div>
+
+            <h2 class="house-video__title reveal">
+              Видео-обзор<br />
+              Дом Вождя
+            </h2>
+
+            <a class="house-video__action reveal" href="#">
+              <img class="house-video__play" src="/img/icon/Play.svg" alt="" aria-hidden="true" />
+              Смотреть видео-обзор
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="house-info" aria-label="О доме">
+        <div class="house-info__inner">
+          <div class="house-info__col">
+            <article class="house-info__card house-info__card--forest">
+              <h2 class="house-info__title">Важное о доме</h2>
+              <ul class="tags tags--fill">
+                <li class="tags__item">
+                  <span class="tags__icon tags__icon--mask tags__icon--profile" aria-hidden="true"></span>
+                  до 11 человек
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/metraj.svg" alt="" />
+                  2 этажа, 5 комнат, 3 спальни
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/krovat.svg" alt="" />
+                  5 двуспальных + 1 односпальная кровать
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/tv.svg" alt="" />
+                  телевизор со Smart TV
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/wifi.svg" alt="" />
+                  wifi
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/kamin.svg" alt="" />
+                  камин
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/panorama.svg" alt="" />
+                  панорамные окна
+                </li>
+              </ul>
+              <p class="house-info__text">
+                Отапливается обогревателями, теплым полом и каминной печью. Выход
+                на балкон с второго этажа с видом на баню, закат и пруд.
+              </p>
+            </article>
+
+            <article class="house-info__card">
+              <h2 class="house-info__title">Приватная территория</h2>
+              <ul class="tags tags--fill">
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/zabor.svg" alt="" />
+                  закрытый двор
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/prud.svg" alt="" />
+                  пруд
+                </li>
+                <li class="tags__item">
+                  <span class="tags__icon tags__icon--mask tags__icon--spark" aria-hidden="true"></span>
+                  чан
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/dom.svg" alt="" />
+                  собственная баня из 200-летней сосны
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/kachel.svg" alt="" />
+                  банная качель
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/mangal.svg" alt="" />
+                  крытый мангал
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/kamin.svg" alt="" />
+                  очаг
+                </li>
+                <li class="tags__item">
+                  <img class="tags__icon" src="/img/icon/art.svg" alt="" />
+                  арт-объекты и фотозоны
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="house-info__col">
+            <p class="house-info__checkin">
+              Заезд от суток с 15:00 до 13:00<br />
+              *Ознакомьтесь с правилами проживания перед бронированием.
+            </p>
+
+            <article class="house-info__card">
+              <h2 class="house-info__title">Кухня и санузел</h2>
+              <div class="house-info__groups">
+                <ul class="tags tags--fill">
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/holodilink.svg" alt="" />
+                    холодильник
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/plita.svg" alt="" />
+                    плита
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/microvolnovka.svg" alt="" />
+                    микроволновка
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/posuda.svg" alt="" />
+                    посуда и столовые приборы
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/chainik.svg" alt="" />
+                    чайник
+                  </li>
+                </ul>
+                <div class="section-head__line section-head__line--row" aria-hidden="true"></div>
+                <ul class="tags tags--fill">
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/voda.svg" alt="" />
+                    вода питьевая из скважины
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/maslo.svg" alt="" />
+                    масло, сахар, соль и чай
+                  </li>
+                </ul>
+                <div class="section-head__line section-head__line--row" aria-hidden="true"></div>
+                <ul class="tags tags--fill">
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/dush.svg" alt="" />
+                    душевая кабина
+                  </li>
+                  <li class="tags__item">
+                    <img class="tags__icon" src="/img/icon/phen.svg" alt="" />
+                    фен
+                  </li>
+                </ul>
+              </div>
+              <p class="house-info__note">
+                Каждому гостю выдается индивидуальный набор средств личной гигиены:
+                гель для душа, шампунь, зубной набор, набор полотенец и тапочки
+              </p>
+            </article>
+
+            <div class="house-info__actions">
+              <a class="btn btn-or" href="#booking">Забронировать</a>
+              <a class="btn btn-wd" href="#house-video">
+                <span class="btn__play" aria-hidden="true"></span>
+                Смотреть видео-обзор
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/bar.js"></script>
+    <script type="module" src="/src/js/reveal.js"></script>
+    <script type="module" src="/src/js/house-gallery.js"></script>
+  </body>
+</html>

@@ -244,6 +244,28 @@
   background: rgba(255, 255, 255, 0.18);
 }
 
+.btn-wd {
+  gap: 12px;
+  border-color: var(--color-wood);
+  color: var(--color-wood);
+}
+
+.btn-wd:hover {
+  background: var(--color-forest);
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.btn__play {
+  display: block;
+  width: 12px;
+  height: 14px;
+  flex-shrink: 0;
+  background: currentColor;
+  mask: url('/img/icon/Play.svg') center / contain no-repeat;
+  -webkit-mask: url('/img/icon/Play.svg') center / contain no-repeat;
+}
+
 @media (max-width: 767px) {
   .field__label {
     font-size: 16px;
@@ -337,6 +359,13 @@
   transform: translate(-50%, -50%);
 }
 
+.section-head__line--row {
+  align-self: stretch;
+  width: 100%;
+  height: 2px;
+  min-height: 0;
+}
+
 .section-head--aside {
   display: flex;
   align-items: center;
@@ -397,7 +426,8 @@
     min-height: 0;
   }
 
-  .section-head--aside .section-head__line::before {
+  .section-head--aside .section-head__line::before,
+  .section-head__line--row::before {
     width: 12px;
     height: 12px;
   }
@@ -492,6 +522,134 @@
   .slider-nav-icon {
     width: 12px;
     height: 20px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Tags — плашки с данными (дом, удобства и т.п.)                      */
+/* Использование:                                                      */
+/*   <ul class="tags">                                                 */
+/*     <li class="tags__item">до 11 чел.</li>                          */
+/*   </ul>                                                             */
+/* .tags--on-light — тёмный текст на светлом фоне                      */
+/* .tags--fill — заливка, текст 20px, опционально с иконкой:           */
+/*   <li class="tags__item">                                           */
+/*     <img class="tags__icon" src="/img/icon/plita.svg" alt="" />     */
+/*     плита                                                           */
+/*   </li>                                                             */
+/* ------------------------------------------------------------------ */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 66px;
+  padding: 0 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--color-white);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.tags--on-light .tags__item {
+  border-color: var(--color-wood);
+  background: transparent;
+  color: var(--color-wood);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.tags--fill {
+  gap: 10px;
+}
+
+.tags--fill .tags__item {
+  height: auto;
+  min-height: 48px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 16px;
+  border: none;
+  background: var(--color-beige);
+  font-size: 20px;
+  line-height: 1.25;
+  white-space: normal;
+  text-align: left;
+  color: var(--color-wood);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.tags__icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.tags__icon--mask {
+  background: currentColor;
+  mask: var(--icon) center / contain no-repeat;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+}
+
+.tags__icon--profile {
+  --icon: url('/img/icon/profile.svg');
+}
+
+.tags__icon--spark {
+  --icon: url('/img/icon/star-2.svg');
+}
+
+@media (max-width: 1479px) {
+  .tags__item {
+    height: 52px;
+    padding: 0 18px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tags {
+    gap: 8px;
+  }
+
+  .tags__item {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .tags--fill .tags__item {
+    height: auto;
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .tags__icon {
+    width: 22px;
+    height: 22px;
   }
 }
 

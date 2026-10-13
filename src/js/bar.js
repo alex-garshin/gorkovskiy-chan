@@ -1,8 +1,17 @@
 const bar = document.querySelector('.bar')
 const features = document.querySelector('.features')
 
-if (bar && features) {
+if (bar) {
   const mq = window.matchMedia('(max-width: 767px)')
+
+  const closeMenu = () => {
+    if (!document.body.classList.contains('is-menu-open')) return
+    document.body.classList.remove('is-menu-open')
+    document.querySelectorAll('[data-menu]').forEach((burger) => {
+      burger.setAttribute('aria-expanded', 'false')
+      burger.setAttribute('aria-label', 'Открыть меню')
+    })
+  }
 
   const sync = () => {
     if (!mq.matches) {
@@ -10,16 +19,14 @@ if (bar && features) {
       return
     }
 
-    const reached = features.getBoundingClientRect().top <= window.innerHeight * 0.7
+    // На страницах без features (шаблон дома) бар всегда виден
+    const reached = features
+      ? features.getBoundingClientRect().top <= window.innerHeight * 0.7
+      : true
+
     document.body.classList.toggle('is-bar-visible', reached)
 
-    if (!reached && document.body.classList.contains('is-menu-open')) {
-      document.body.classList.remove('is-menu-open')
-      document.querySelectorAll('[data-menu]').forEach((burger) => {
-        burger.setAttribute('aria-expanded', 'false')
-        burger.setAttribute('aria-label', 'Открыть меню')
-      })
-    }
+    if (!reached) closeMenu()
   }
 
   sync()
