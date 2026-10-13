@@ -92,9 +92,9 @@
           aria-hidden="true"
         />
 
-        <div class="house-hero__body">
+        <div class="house-hero__body reveal-stagger">
           <img
-            class="house-hero__logo"
+            class="house-hero__logo reveal"
             src="/img/bg/logo.svg"
             alt="Горьковский Чан"
           />
@@ -125,13 +125,13 @@
         </div>
       </section>
 
-      <div class="booking" id="booking" aria-hidden="true">
+      <div class="booking reveal" id="booking" aria-hidden="true">
         <div class="booking__box"></div>
       </div>
 
       <section class="house-gallery" aria-label="Фотографии дома">
         <div class="house-gallery__inner">
-          <div class="house-gallery__slider" data-house-gallery>
+          <div class="house-gallery__slider reveal" data-house-gallery>
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -189,29 +189,27 @@
       </section>
 
       <section class="house-video" id="house-video" aria-label="Видео-обзор">
-        <div class="house-video__inner">
-          <div class="house-video__card">
-            <div class="house-video__bg" aria-hidden="true">
-              <img src="/img/houses/dom-vojdya-img.png" alt="" />
-            </div>
+        <div class="house-video__bg" aria-hidden="true">
+          <img src="/img/houses/dom-vojdya-img.png" alt="" />
+        </div>
 
-            <h2 class="house-video__title reveal">
-              Видео-обзор<br />
-              Дом Вождя
-            </h2>
+        <div class="house-video__inner reveal-stagger">
+          <h2 class="h2 house-video__title reveal">
+            Видео-обзор<br />
+            Дом Вождя
+          </h2>
 
-            <a class="house-video__action reveal" href="#">
-              <img class="house-video__play" src="/img/icon/Play.svg" alt="" aria-hidden="true" />
-              Смотреть видео-обзор
-            </a>
-          </div>
+          <a class="house-video__action reveal" href="#">
+            <img class="house-video__play" src="/img/icon/Play.svg" alt="" aria-hidden="true" />
+            Смотреть видео-обзор
+          </a>
         </div>
       </section>
 
       <section class="house-info" aria-label="О доме">
         <div class="house-info__inner">
-          <div class="house-info__col">
-            <article class="house-info__card house-info__card--forest">
+          <div class="house-info__col reveal-stagger">
+            <article class="house-info__card house-info__card--forest reveal">
               <h2 class="house-info__title">Важное о доме</h2>
               <ul class="tags tags--fill">
                 <li class="tags__item">
@@ -249,7 +247,7 @@
               </p>
             </article>
 
-            <article class="house-info__card">
+            <article class="house-info__card reveal">
               <h2 class="house-info__title">Приватная территория</h2>
               <ul class="tags tags--fill">
                 <li class="tags__item">
@@ -288,13 +286,13 @@
             </article>
           </div>
 
-          <div class="house-info__col">
-            <p class="house-info__checkin">
+          <div class="house-info__col reveal-stagger">
+            <p class="house-info__checkin reveal">
               Заезд от суток с 15:00 до 13:00<br />
               *Ознакомьтесь с правилами проживания перед бронированием.
             </p>
 
-            <article class="house-info__card">
+            <article class="house-info__card reveal">
               <h2 class="house-info__title">Кухня и санузел</h2>
               <div class="house-info__groups">
                 <ul class="tags tags--fill">
@@ -348,7 +346,7 @@
               </p>
             </article>
 
-            <div class="house-info__actions">
+            <div class="house-info__actions reveal">
               <a class="btn btn-or" href="#booking">Забронировать</a>
               <a class="btn btn-wd" href="#house-video">
                 <span class="btn__play" aria-hidden="true"></span>
@@ -358,11 +356,540 @@
           </div>
         </div>
       </section>
+
+      <section class="house-breakfast" aria-label="Завтраки">
+        <div class="house-breakfast__bg" aria-hidden="true">
+          <img src="/img/houses/diner.png" alt="" />
+        </div>
+
+        <div class="house-breakfast__inner reveal-stagger">
+          <h2 class="h2 house-breakfast__title reveal">
+            У нас можно заказать<br />
+            сбалансированные<br />
+            завтраки
+          </h2>
+          <p class="house-breakfast__text reveal">
+            Завтрак можно заказать ко времени и стоит он всего 800 руб. +
+            ароматный кофе 300 руб.
+          </p>
+        </div>
+      </section>
+
+      <section class="house-options" aria-label="Дополнительные опции">
+        <div class="house-options__inner">
+          <h2 class="h2 house-options__title reveal">Доп.опции для вашего комфорта</h2>
+        </div>
+
+        <div class="museum__slider house-options__slider reveal" data-house-options>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <article class="exhibit exhibit--light swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/bg/par.jpg" alt="Украшенный чан" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    От 1000 руб.
+                  </p>
+                  <h3 class="h3 exhibit__name">Красивый чан</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      Украсим чан к вашему приезду: пихтой, травами и цитрусами,
+                      лепестками роз или может быть резиновыми уточками?
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="exhibit exhibit--light swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/bg/par.jpg" alt="Парение и массаж" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    От 4 000 руб
+                  </p>
+                  <h3 class="h3 exhibit__name">Парение<br />и массаж</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      Банная SPA-программа для двоих, классический или огненный массаж
+                      а также услуги пармастера
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="exhibit exhibit--light swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/bike.png" alt="Прогулки по территории" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    За доп.плату
+                  </p>
+                  <h3 class="h3 exhibit__name">Прогулки по территории</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      Тропы между домами, арт-объектами и лесом — можно гулять пешком
+                      или взять велосипед и объехать всё за один заезд.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="slider-nav slider-nav--prev"
+            type="button"
+            data-house-options-prev
+            aria-label="Предыдущий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="slider-nav slider-nav--next"
+            type="button"
+            data-house-options-next
+            aria-label="Следующий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="house-options__inner">
+          <p class="house-options__note reveal">
+            Доп.опции можно выбрать при бронировании домика
+          </p>
+        </div>
+      </section>
+
+      <section class="house-pets" aria-label="Питомцы">
+        <div class="house-pets__bg" aria-hidden="true">
+          <img src="/img/houses/cat.png" alt="" />
+        </div>
+
+        <div class="house-pets__inner reveal-stagger">
+          <h2 class="h2 house-pets__title reveal">
+            К нам можно<br />
+            с питомцами
+          </h2>
+          <div class="house-pets__aside reveal">
+            <p class="house-pets__prices">
+              Собачка до 10 кг. - 2 000 руб.<br />
+              Собачка от 10 кг. - 3 000 руб.<br />
+              Порядочный котик - 5 000 руб.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="house-more" aria-label="Другие популярные варианты размещения">
+        <div class="house-more__inner">
+          <h2 class="h2 house-more__title reveal">Другие популярные варианты размещения</h2>
+        </div>
+
+        <div class="house-more__slider reveal" data-house-more>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <a class="house swiper-slide" href="/house/">
+                <div class="house__media">
+                  <img src="/img/houses/dom-vojdya.png" alt="Дом Вождя" />
+                </div>
+                <span class="house__next" aria-hidden="true">
+                  <svg class="house__next-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div class="house__body">
+                  <ul class="house__tags">
+                    <li>до 11 чел.</li>
+                    <li>5 комнат</li>
+                    <li>120 м2</li>
+                    <li>Баня</li>
+                    <li>Чан</li>
+                  </ul>
+                  <div class="house__meta">
+                    <h3 class="h3 house__name">Дом Вождя</h3>
+                    <p class="house__price">
+                      <span class="house__price-from">от</span>
+                      <strong class="house__price-value">21 000</strong>
+                      <span class="house__price-unit">руб./ночь</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a class="house swiper-slide" href="/#houses">
+                <div class="house__media">
+                  <img src="/img/houses/sun.png" alt="Дом Луны" />
+                </div>
+                <span class="house__next" aria-hidden="true">
+                  <svg class="house__next-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div class="house__body">
+                  <ul class="house__tags">
+                    <li>до 6 чел.</li>
+                    <li>3 комнаты</li>
+                    <li>85 м2</li>
+                    <li>Баня</li>
+                    <li>Чан</li>
+                  </ul>
+                  <div class="house__meta">
+                    <h3 class="h3 house__name">Дом Луны</h3>
+                    <p class="house__price">
+                      <span class="house__price-from">от</span>
+                      <strong class="house__price-value">18 000</strong>
+                      <span class="house__price-unit">руб./ночь</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a class="house swiper-slide" href="/#houses">
+                <div class="house__media">
+                  <img src="/img/houses/Дом Солнца 2.png" alt="Дом Солнца" />
+                </div>
+                <span class="house__next" aria-hidden="true">
+                  <svg class="house__next-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div class="house__body">
+                  <ul class="house__tags">
+                    <li>до 8 чел.</li>
+                    <li>4 комнаты</li>
+                    <li>98 м2</li>
+                    <li>Баня</li>
+                    <li>Чан</li>
+                  </ul>
+                  <div class="house__meta">
+                    <h3 class="h3 house__name">Дом Солнца</h3>
+                    <p class="house__price">
+                      <span class="house__price-from">от</span>
+                      <strong class="house__price-value">19 000</strong>
+                      <span class="house__price-unit">руб./ночь</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a class="house swiper-slide" href="/#houses">
+                <div class="house__media">
+                  <img src="/img/houses/XXXL-2.png" alt="Дом Предков" />
+                </div>
+                <span class="house__next" aria-hidden="true">
+                  <svg class="house__next-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div class="house__body">
+                  <ul class="house__tags">
+                    <li>до 10 чел.</li>
+                    <li>5 комнат</li>
+                    <li>110 м2</li>
+                    <li>Баня</li>
+                    <li>Чан</li>
+                  </ul>
+                  <div class="house__meta">
+                    <h3 class="h3 house__name">Дом Предков</h3>
+                    <p class="house__price">
+                      <span class="house__price-from">от</span>
+                      <strong class="house__price-value">20 000</strong>
+                      <span class="house__price-unit">руб./ночь</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <button
+            class="slider-nav slider-nav--prev"
+            type="button"
+            data-house-more-prev
+            aria-label="Предыдущий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="slider-nav slider-nav--next"
+            type="button"
+            data-house-more-next
+            aria-label="Следующий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="house-more__inner house-more__action reveal">
+          <a class="btn btn-or" href="/#houses">Смотреть все домики</a>
+        </div>
+      </section>
+
+      <section class="house-faq" aria-label="Часто задаваемые вопросы">
+        <div class="house-faq__inner">
+          <h2 class="h2 house-faq__title reveal">Часто задаваемые вопросы:</h2>
+
+          <div class="faq reveal">
+            <details class="faq__item" open>
+              <summary class="faq__head">
+                <span class="faq__question">Почему стоит приехать именно к нам?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    Горьковский чан — стилизованная этно-деревня в Нижегородской области.
+                    Здесь атмосфера уюта, арт-объекты на территории, приватный участок у
+                    каждого дома и безлимитный чан.
+                  </p>
+                  <p>
+                    Мы создаём место, куда хочется возвращаться: замедлиться, побыть в тишине
+                    леса и провести время только со своими.
+                  </p>
+                  <p>
+                    Дома оборудованы всем необходимым, а вокруг — природа, водохранилище и
+                    пространство для отдыха без суеты большого города.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Что входит в стоимость?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    В стоимость входит проживание в уютном доме со всеми удобствами,
+                    пользование всеми благами дома: одноразовые предметы личной гигиены в
+                    ванной комнате, тапочки, постельное белье, посуда, кухонная утварь,
+                    специи, чай, масло. Безлимитный персональный чан с запасом дров для
+                    подтопки поздним вечером, приватная территория у каждого дома: очаг,
+                    мангал, беседка.
+                  </p>
+                  <p>
+                    В 6-ти домах есть баня. Она тоже безлимитная! К нам можно с собаками и
+                    кошечками. Проживать с другими животными к сожалению нельзя. В зависимости
+                    от размера доплата составит от 2000 до 3000 руб, так же необходимо
+                    оставить возвратный залог за каждое животное 5 000 Р
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Как выбрать дату бронирования?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    Выбрать дату бронирования вам всегда поможет наш менеджер, просто
+                    позвоните по телефону в разделе «Контакты» или напишите нам в мессенджер.
+                    Так же вы можете воспользоваться онлайн бронированием, нажав на кнопку в
+                    правом нижнем углу экрана на любой странице сайта.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Что брать с собой?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    Прелесть лесной жизни — пища на огне. Дрова, решетку и розжиг мы вам
+                    предоставим в аренду. Поэтому, берите продукты и наслаждайтесь ароматом
+                    еды у костра. Но мы так же предлагаем гостям завтраки, обеды и ужины под
+                    заказ, а так же ароматный кофе. Уточните наличие у менеджера при
+                    бронировании или перед заездом.
+                  </p>
+                  <p>
+                    Вода из скважины, вкусная чистая идёт из крана, ее и наливаем в чаны.
+                    Поэтому, питьевую воду можно с собой не брать. Нашим гостям мы
+                    предоставляем одноразовые тапочки, но до чана и по территории дома удобнее
+                    ходить в резиновых сланцах — не забудьте прихватить их с собой. Возьмите
+                    с собой то, что вы захотите накинуть после парения в чане или бане. Банное
+                    полотенце мы предоставляем бесплатно.
+                  </p>
+                  <p>
+                    В дополнение вы можете арендовать у нас махровый халат. Вместо брендовых
+                    скрабов рекомендуем приобрести у нас пихту. Ее привозим для Вас прямиком
+                    из Марий Эл. Мы заварим ее в чан чуть раньше вашего посещения, чтобы ветки
+                    отдали воде свои масла и вы насладились хвойным ароматом. В ванной
+                    комнате для Вас одноразовый зубной набор, гель для душа и одноразовые
+                    тапочки — за это не беспокойтесь. На кухне вас ждет вся необходимая
+                    утварь, а также соль, сахар, масло, специи и вкусный чай.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Какие развлечения есть на территории этно-деревни?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    Мы всегда стараемся наполнить отдых наших гостей незабываемыми
+                    впечатлениями. В Горьковском чане без оплаты вам доступны:
+                  </p>
+                  <ul>
+                    <li>детская площадка</li>
+                    <li>прогулка с хаски</li>
+                    <li>контактный зоопарк с пони, кроликами, енотом и курочками</li>
+                    <li>настольные игры и книги в каждом доме</li>
+                    <li>уютная костровая зона для вечерних посиделок</li>
+                    <li>незабываемые закаты и потрясающие рассветы на горьковском водохранилище</li>
+                    <li>сосновый лес с грибами и ягодами</li>
+                    <li>впечатляющая этническая атмосфера с множеством арт-объектов и деталей</li>
+                  </ul>
+                  <p>
+                    Также на базе отдыха часто проводятся мероприятия с живой музыкой,
+                    квестами для детей и мастер-классами. Уточняйте информацию у менеджера по
+                    бронированию.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Какие услуги за доп.плату вы предоставляете?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    У нас есть всё для того, чтобы сделать Ваш отдых более комфортным. Для
+                    дорогих гостей мы предлагаем:
+                  </p>
+                  <ul>
+                    <li>ароматные травы и веники для парений</li>
+                    <li>процедуры: парения и массаж</li>
+                    <li>
+                      различные варианты оформления чана: лепестками роз для романтических
+                      вечеров, инстаграмный чан с травами и цитрусами для атмосферных
+                      фотографий, резиновые уточки для тех кто хочет окунуться в детство
+                    </li>
+                    <li>аренда спортивного инвентаря: сап-борды, велосипеды, лыжи</li>
+                    <li>прокат квадроциклов и снегоходов</li>
+                    <li>завтраки, обеды, ужины</li>
+                    <li>сладости, маршмеллоу для барбекю</li>
+                    <li>дрова и аксессуары для фотосессий</li>
+                  </ul>
+                  <p>
+                    Актуальный список дополнительных услуг можно уточнить при бронировании.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__head">
+                <span class="faq__question">Какие правила проживания в этно-деревне?</span>
+                <span class="faq__toggle" aria-hidden="true">
+                  <svg class="faq__toggle-icon" viewBox="0 0 10 16" fill="none">
+                    <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq__panel">
+                <div class="faq__content content">
+                  <p>
+                    В пространстве действуют правила безопасности и уважения. Уважайте
+                    пространство. Пожалуйста соблюдайте режим тишины на улице с 22:00.
+                  </p>
+                  <p>
+                    Соблюдайте правила противопожарной безопасности: запрещено курение
+                    кальяна в домах, розжиг угля в доме и беседках, использование свечей и
+                    салютов, открытый огонь вне зоны очага.
+                  </p>
+                  <p>
+                    Уважайте труд горничной: в бане и чанах запрещены свои веники, масла,
+                    соли. Использование хлопушек и конфетти. Пожалуйста оставляйте за собой
+                    чистый дом и территорию.
+                  </p>
+                  <p>
+                    Доступ на территорию, заселение и выезд из домиков происходит с
+                    администратором. Если вы хотите экскурсию по свободным домам и
+                    территориям — спросите об этом администратора, с удовольствием проведет
+                    вас.
+                  </p>
+                  <p>
+                    В нашем пространстве мы ценим конфиденциальность, уединенность и личное
+                    пространство людей — следите за тем, чтоб ваша камера снимала только вас
+                    или фото зоны с Вами.
+                  </p>
+                  <p>
+                    Подробнее о правилах проживания можно ознакомиться в письме при заселении
+                    или на сайте.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/src/js/menu.js"></script>
     <script type="module" src="/src/js/bar.js"></script>
     <script type="module" src="/src/js/reveal.js"></script>
     <script type="module" src="/src/js/house-gallery.js"></script>
+    <script type="module" src="/src/js/house-options.js"></script>
+    <script type="module" src="/src/js/house-more.js"></script>
+    <script type="module" src="/src/js/house-faq.js"></script>
   </body>
 </html>

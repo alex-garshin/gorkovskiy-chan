@@ -34,7 +34,7 @@
 .house-info__title {
   margin: 0 0 24px;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 1.05;
   text-transform: uppercase;
@@ -110,7 +110,7 @@
 
 @media (max-width: 767px) {
   .house-info {
-    padding: 0 16px calc(var(--bar-h) + 40px);
+    padding: 0 16px 40px;
   }
 
   .house-info__checkin {

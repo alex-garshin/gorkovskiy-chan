@@ -1,0 +1,72 @@
+.house-more {
+  padding: 80px 48px;
+  background: var(--color-cream);
+  overflow-x: clip;
+}
+
+.house-more__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.house-more__title {
+  margin-bottom: 48px;
+  color: var(--color-wood);
+}
+
+.house-more__slider {
+  position: relative;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.house-more__slider .swiper {
+  overflow: visible;
+}
+
+.house-more__slider .swiper-slide {
+  height: auto;
+}
+
+.house-more__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 1479px) {
+  .house-more {
+    padding: 64px 24px;
+  }
+
+  .house-more__title {
+    margin-bottom: 32px;
+  }
+
+  .house-more__action {
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .house-more {
+    padding: 40px 16px;
+  }
+
+  .house-more__title {
+    margin-bottom: 24px;
+  }
+
+  .house-more__slider {
+    width: calc(100% + 16px);
+    margin-right: -16px;
+  }
+
+  .house-more__action {
+    margin-top: 28px;
+  }
+
+  .house-more__action .btn {
+    width: 100%;
+  }
+}
