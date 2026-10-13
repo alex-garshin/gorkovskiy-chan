@@ -7,78 +7,7 @@
     <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner">
-        <a class="header__logo" href="/" aria-label="Горьковский Чан">
-          <img src="/img/bg/logo.svg" alt="Горьковский Чан" />
-        </a>
-
-        <nav class="header__nav" aria-label="Основная навигация">
-          <a href="/#houses">Домики</a>
-          <span class="header__dot" aria-hidden="true"></span>
-          <a href="/#bath">Баня</a>
-          <span class="header__dot" aria-hidden="true"></span>
-          <a href="/#fun">Развлечения</a>
-        </nav>
-
-        <div class="header__aside">
-          <div class="header__contacts">
-            <a class="header__phone" href="tel:+79302500369">+7-930-250-03-69</a>
-            <p class="header__address">
-              Нижегородская область, Городецкий район,<br />
-              Фалино-Пестово
-            </p>
-          </div>
-          <a class="btn btn-or header__book" href="/#houses">Забронировать</a>
-          <a class="account header__account" href="/#houses" aria-label="Личный кабинет">
-            <span class="account__icon" aria-hidden="true"></span>
-          </a>
-          <button
-            class="burger header__burger"
-            type="button"
-            data-menu
-            aria-label="Открыть меню"
-            aria-expanded="false"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <nav class="mnav" data-mnav aria-label="Мобильное меню">
-      <a class="account mnav__account" href="/#houses" aria-label="Личный кабинет">
-        <span class="account__icon" aria-hidden="true"></span>
-      </a>
-      <a href="/#houses">Домики</a>
-      <a href="/#bath">Баня</a>
-      <a href="/#fun">Развлечения</a>
-      <a class="mnav__phone" href="tel:+79302500369">+7-930-250-03-69</a>
-      <p class="mnav__address">
-        Нижегородская область, Городецкий район,<br />
-        Фалино-Пестово
-      </p>
-    </nav>
-
-    <div class="bar">
-      <a class="bar__logo" href="/" aria-label="Горьковский Чан">
-        <img src="/img/bg/logo.svg" alt="" />
-      </a>
-      <a class="btn btn-or bar__book" href="/#houses">Забронировать</a>
-      <button
-        class="burger bar__burger"
-        type="button"
-        data-menu
-        aria-label="Открыть меню"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+    {{> page-header}}
 
     <main class="page page--house">
       <section class="house-hero">

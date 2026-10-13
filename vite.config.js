@@ -1,7 +1,21 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
+import handlebars from 'vite-plugin-handlebars'
+
+const root = import.meta.dirname
 
 export default defineConfig({
+  plugins: [
+    handlebars({
+      partialDirectory: resolve(root, 'src/partials'),
+      context(pagePath) {
+        const path = String(pagePath).replaceAll('\\', '/')
+        return {
+          home: /\/house(\/|$)/.test(path) ? '/' : '',
+        }
+      },
+    }),
+  ],
   css: {
     preprocessorOptions: {
       scss: {
@@ -13,9 +27,10 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        house: resolve(__dirname, 'house/index.html'),
+        main: resolve(root, 'index.html'),
+        house: resolve(root, 'house/index.html'),
       },
     },
   },
 })
+
