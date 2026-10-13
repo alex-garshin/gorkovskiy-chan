@@ -21,7 +21,7 @@ if (reduced) {
 
   requestAnimationFrame(() => {
     items.forEach((el) => {
-      if (el.closest('.hero')) {
+      if (el.closest('.hero') || el.closest('.house-hero')) {
         el.classList.add('is-revealed')
         return
       }

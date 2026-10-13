@@ -1,13 +1,14 @@
 .booking {
   position: relative;
   z-index: 2;
-  max-width: var(--container);
   margin: -100px auto 0;
   padding: 0 48px;
 }
 
 .booking__box {
+  max-width: var(--container);
   min-height: 200px;
+  margin: 0 auto;
   border-radius: 20px;
   background: var(--color-clay);
 }
