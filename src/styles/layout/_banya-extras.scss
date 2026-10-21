@@ -44,6 +44,7 @@
 }
 
 .banya-extra__media {
+  order: -1;
   width: 100%;
   min-width: 0;
   height: 460px;
@@ -57,13 +58,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.banya-extra__body {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  min-width: 0;
 }
 
 .banya-extra__price {
@@ -85,7 +79,6 @@
 
 .banya-extra__name {
   margin: 0;
-  margin-top: 10px !important;
   font-size: 50px;
   line-height: 1.1;
   color: var(--color-wood);
@@ -128,21 +121,23 @@
   }
 
   .banya-extra {
-    gap: 18px;
+    gap: 16px;
     padding: 16px;
     border-radius: 15px;
   }
 
   .banya-extra__media {
+    order: 0;
     height: 220px;
-  }
-
-  .banya-extra__body {
-    gap: 12px;
   }
 
   .banya-extra__price {
     font-size: 16px;
+
+    .exhibit__dot {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   .banya-extra__name {
@@ -151,5 +146,13 @@
 
   .banya-extra__text {
     font-size: 16px;
+  }
+
+  .banya-extra__lead {
+    margin-top: 12px !important;
+  }
+
+  .banya-extra__text .banya-extra__lead + ul {
+    margin-top: 12px;
   }
 }

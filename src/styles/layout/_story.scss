@@ -157,6 +157,7 @@
 
   .story--light .story__inner {
     flex-direction: column;
+    gap: 20px;
   }
 
   .story__tall,
@@ -173,6 +174,41 @@
 
   .story__stack {
     display: none;
+  }
+
+  .story--light .story__stack {
+    display: flex;
+    order: 2;
+    height: auto;
+    gap: 16px;
+  }
+
+  .story--light .story__shot {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 478 / 326;
+  }
+
+  .story--light .story__content {
+    display: contents;
+  }
+
+  .story--light .story__lead {
+    order: 1;
+  }
+
+  .story--light .story__content > .h2 {
+    order: 3;
+    margin: 0;
+  }
+
+  .story--light .story__content > .content {
+    order: 4;
+  }
+
+  .story--light .story__tall {
+    order: 5;
   }
 
   .story__shot {

@@ -424,8 +424,10 @@
     gap: 16px;
   }
 
-  .section-head--split .section-head__title {
-    flex-basis: auto;
+  .section-head--split .section-head__title,
+  .section-head--split .section-head__aside {
+    flex: 0 1 auto;
+    width: 100%;
   }
 
   .section-head--split .section-head__line {
