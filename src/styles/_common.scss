@@ -144,7 +144,7 @@ body {
   font-size: var(--fs-text-sm);
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .h2 {
     font-size: 40px;
   }
@@ -154,7 +154,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   :root {
     --fs-title-home: 34px;
     --fs-title: 32px;

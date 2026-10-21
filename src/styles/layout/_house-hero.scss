@@ -132,7 +132,7 @@
   margin-top: 8px;
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .house-hero {
     padding: 140px 24px 110px;
   }
@@ -176,7 +176,13 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
+  .house-hero__mark {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
   .house-hero {
     min-height: 0;
     padding: 28px 16px 160px;

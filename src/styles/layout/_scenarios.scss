@@ -218,13 +218,13 @@
   font-size: 20px;
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .scenarios {
     padding: 0 24px 64px;
   }
 
   .scenario {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     min-height: 0;
   }
 
@@ -244,6 +244,17 @@
 }
 
 @media (max-width: 767px) {
+  .scenario {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .scenario__media {
+    max-width: none;
+    height: 360px;
+  }
+}
+
+@media (max-width: 575px) {
   .scenarios {
     padding: 0 16px 40px;
   }
@@ -289,6 +300,7 @@
   }
 
   .scenario__media {
+    max-width: 400px;
     max-height: 220px;
     height: auto;
   }

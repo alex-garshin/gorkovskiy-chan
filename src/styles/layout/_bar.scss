@@ -70,7 +70,7 @@
   display: none;
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .mnav {
     display: flex;
     flex-direction: column;
@@ -139,9 +139,7 @@
     color: var(--color-brown);
     text-align: right;
   }
-}
 
-@media (max-width: 1479px) and (min-width: 768px) {
   .mnav {
     top: 0;
     bottom: auto;
@@ -150,7 +148,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .bar {
     display: grid;
     grid-template-columns: auto 1fr auto;

@@ -82,7 +82,7 @@
   margin-top: 35px;
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .house-info {
     padding: 0 24px 80px;
   }
@@ -108,7 +108,13 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .house-info__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
   .house-info {
     padding: 0 16px 40px;
   }

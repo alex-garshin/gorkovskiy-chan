@@ -18,11 +18,11 @@ if (freeRoot) {
       nextEl: freeRoot.querySelector('[data-activities-next]'),
     },
     breakpoints: {
-      768: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1480: {
+      1400: {
         slidesPerView: 2,
         spaceBetween: 24,
       },
@@ -46,7 +46,7 @@ if (paidRoot) {
       nextEl: paidRoot.querySelector('[data-paid-next]'),
     },
     breakpoints: {
-      768: {
+      576: {
         spaceBetween: 24,
       },
     },

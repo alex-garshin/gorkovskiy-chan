@@ -97,29 +97,28 @@
   align-self: flex-start;
 }
 
-@media (min-width: 768px) {
-  .celebration__slider .swiper-wrapper.celebration__grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 20px;
-    transform: none !important;
-    box-sizing: border-box;
-  }
-
-  .celebration-card {
-    grid-column: span 2;
-    width: auto;
-    height: auto;
-  }
-
-  .celebration-card:nth-child(1),
-  .celebration-card:nth-child(2) {
-    grid-column: span 3;
-    min-height: 340px;
-  }
+/* Сетка — пока слайдер не смонтирован (на мобилке его монтирует celebration.js) */
+.celebration__slider .swiper:not(.swiper-initialized) .celebration__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+  transform: none !important;
+  box-sizing: border-box;
 }
 
-@media (max-width: 1479px) and (min-width: 768px) {
+.celebration__slider .swiper:not(.swiper-initialized) .celebration-card {
+  grid-column: span 2;
+  width: auto;
+  height: auto;
+}
+
+.celebration__slider .swiper:not(.swiper-initialized) .celebration-card:nth-child(1),
+.celebration__slider .swiper:not(.swiper-initialized) .celebration-card:nth-child(2) {
+  grid-column: span 3;
+  min-height: 340px;
+}
+
+@media (max-width: 1399px) {
   .celebration {
     padding: 64px 24px;
   }
@@ -137,7 +136,7 @@
     margin-bottom: 28px;
   }
 
-  .celebration__slider .swiper-wrapper.celebration__grid {
+  .celebration__slider .swiper:not(.swiper-initialized) .celebration__grid {
     gap: 16px;
   }
 
@@ -145,8 +144,8 @@
     min-height: 220px;
   }
 
-  .celebration-card:nth-child(1),
-  .celebration-card:nth-child(2) {
+  .celebration__slider .swiper:not(.swiper-initialized) .celebration-card:nth-child(1),
+  .celebration__slider .swiper:not(.swiper-initialized) .celebration-card:nth-child(2) {
     min-height: 260px;
   }
 
@@ -158,7 +157,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .celebration {
     padding: 40px 16px calc(var(--bar-h) + 24px);
   }

@@ -5,7 +5,7 @@ import 'swiper/css'
 const root = document.querySelector('[data-celebration-slider]')
 
 if (root) {
-  const mq = window.matchMedia('(max-width: 767px)')
+  const mq = window.matchMedia('(max-width: 575px)')
   let swiper = null
 
   const mount = () => {

@@ -61,7 +61,7 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .banya-video {
     margin-bottom: 64px;
     padding: 0 24px;
@@ -74,6 +74,24 @@
 }
 
 @media (max-width: 767px) {
+  .banya-video__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .banya-video__title {
+    max-width: none;
+  }
+
+  .banya-video__action {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 575px) {
   .banya-video {
     height: auto;
     min-height: 320px;

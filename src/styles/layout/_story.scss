@@ -107,7 +107,7 @@
   color: var(--color-white);
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .story {
     padding: 64px 24px;
   }
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .story__inner {
     flex-wrap: wrap;
   }
@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .story {
     padding: 40px 16px;
   }

@@ -2,7 +2,7 @@ const bar = document.querySelector('.bar')
 const features = document.querySelector('.features')
 
 if (bar) {
-  const mq = window.matchMedia('(max-width: 767px)')
+  const mq = window.matchMedia('(max-width: 575px)')
 
   const closeMenu = () => {
     if (!document.body.classList.contains('is-menu-open')) return

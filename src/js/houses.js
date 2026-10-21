@@ -8,8 +8,8 @@ if (grid) {
   const logoSrc = grid.dataset.logo || '/img/bg/logo.svg'
 
   function getColumns() {
-    if (window.matchMedia('(max-width: 767px)').matches) return 1
-    if (window.matchMedia('(max-width: 1479px)').matches) return 2
+    if (window.matchMedia('(max-width: 575px)').matches) return 1
+    if (window.matchMedia('(max-width: 1399px)').matches) return 2
     return 3
   }
 
@@ -22,7 +22,7 @@ if (grid) {
   }
 
   function fillRow() {
-    if (window.matchMedia('(max-width: 767px)').matches) {
+    if (window.matchMedia('(max-width: 575px)').matches) {
       grid.querySelectorAll('.house--logo').forEach((el) => el.remove())
       return
     }

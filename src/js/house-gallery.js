@@ -18,11 +18,11 @@ if (root) {
       nextEl: root.querySelector('[data-house-gallery-next]'),
     },
     breakpoints: {
-      768: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1480: {
+      1400: {
         slidesPerView: 2,
         spaceBetween: 24,
       },

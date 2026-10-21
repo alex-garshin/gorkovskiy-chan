@@ -69,7 +69,7 @@
   color: var(--color-white);
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1399px) {
   .house-pets {
     padding: 0 24px;
   }
@@ -89,6 +89,18 @@
 }
 
 @media (max-width: 767px) {
+  .house-pets__inner {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .house-pets__title {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
   .house-pets {
     height: auto;
     min-height: 420px;

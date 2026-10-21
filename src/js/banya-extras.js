@@ -22,7 +22,7 @@ if (root) {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1480: {
+      1400: {
         slidesPerView: 2,
         spaceBetween: 24,
       },

@@ -18,7 +18,7 @@ if (root) {
       nextEl: root.querySelector('[data-scenarios-next]'),
     },
     breakpoints: {
-      768: {
+      576: {
         spaceBetween: 24,
       },
     },
