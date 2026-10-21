@@ -1,4 +1,5 @@
-.page--house {
+.page--house,
+.page--banya {
   padding-bottom: 0;
 }
 
@@ -123,6 +124,14 @@
   flex-wrap: nowrap;
 }
 
+.house-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
 @media (max-width: 1479px) {
   .house-hero {
     padding: 140px 24px 110px;
@@ -160,6 +169,10 @@
 
   .house-hero__tags {
     flex-wrap: wrap;
+  }
+
+  .house-hero__actions {
+    margin-top: 4px;
   }
 }
 
@@ -206,5 +219,17 @@
   .house-hero__price-from,
   .house-hero__price-unit {
     font-size: 16px;
+  }
+
+  .house-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .house-hero__actions .btn {
+    width: 100%;
   }
 }

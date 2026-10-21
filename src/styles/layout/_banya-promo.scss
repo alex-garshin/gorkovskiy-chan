@@ -1,0 +1,134 @@
+.banya-promo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 680px;
+  margin-bottom: 80px;
+  padding: 0 48px;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.banya-promo__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.banya-promo__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banya-promo__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 52, 39, 0.88) 0%,
+    rgba(36, 52, 39, 0.72) 34%,
+    rgba(36, 52, 39, 0.32) 64%,
+    rgba(36, 52, 39, 0.12) 100%
+  );
+}
+
+.banya-promo__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.banya-promo__title {
+  margin: 0;
+  font-size: 70px;
+  line-height: 1.05;
+  color: var(--color-white);
+}
+
+.banya-promo__tags {
+  flex-wrap: wrap;
+}
+
+.banya-promo__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--color-white);
+
+  p {
+    margin: 0;
+  }
+}
+
+.banya-promo__action {
+  margin-top: 4px;
+}
+
+@media (max-width: 1479px) {
+  .banya-promo {
+    margin-bottom: 64px;
+    padding: 0 24px;
+  }
+
+  .banya-promo__inner {
+    gap: 22px;
+  }
+
+  .banya-promo__title {
+    font-size: 48px;
+  }
+
+  .banya-promo__prices {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banya-promo {
+    height: auto;
+    min-height: 420px;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    padding: 28px 16px 40px;
+  }
+
+  .banya-promo__bg::after {
+    background: linear-gradient(
+      rgba(36, 52, 39, 0.78) 0%,
+      rgba(36, 52, 39, 0.72) 45%,
+      rgba(36, 52, 39, 0.68) 100%
+    );
+  }
+
+  .banya-promo__inner {
+    gap: 20px;
+  }
+
+  .banya-promo__title {
+    font-size: 36px;
+  }
+
+  .banya-promo__prices {
+    font-size: 16px;
+  }
+
+  .banya-promo__action {
+    width: 100%;
+  }
+}

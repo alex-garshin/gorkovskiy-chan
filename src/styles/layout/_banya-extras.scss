@@ -1,0 +1,155 @@
+.banya-extras {
+  padding: 80px 48px;
+  background: var(--color-cream);
+  overflow-x: clip;
+  color: var(--color-wood);
+}
+
+.banya-extras__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.banya-extras__title {
+  margin-bottom: 36px;
+  color: var(--color-wood);
+}
+
+.banya-extras__slider {
+  position: relative;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.banya-extras__slider .swiper {
+  overflow: visible;
+}
+
+.banya-extras__slider .swiper-slide {
+  height: auto;
+}
+
+.banya-extra {
+  display: flex !important;
+  flex-direction: column;
+  gap: 25px;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f3eadf;
+  color: var(--color-wood);
+}
+
+.banya-extra__media {
+  width: 100%;
+  min-width: 0;
+  height: 460px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.banya-extra__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banya-extra__body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 0;
+}
+
+.banya-extra__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #c9b79c;
+
+  .exhibit__dot {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.banya-extra__name {
+  margin: 0;
+  margin-top: 10px !important;
+  font-size: 50px;
+  line-height: 1.1;
+  color: var(--color-wood);
+}
+
+.banya-extra__text {
+  color: var(--color-wood);
+}
+
+.banya-extra__lead {
+  font-weight: 700;
+  margin-top: 25px !important;
+}
+
+.banya-extra__text .banya-extra__lead + ul {
+  margin-top: 25px;
+}
+
+@media (max-width: 1479px) {
+  .banya-extras {
+    padding: 64px 24px;
+  }
+
+  .banya-extra__media {
+    height: 460px;
+  }
+
+  .banya-extra__name {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banya-extras {
+    padding: 40px 16px;
+  }
+
+  .banya-extras__title {
+    margin-bottom: 24px;
+  }
+
+  .banya-extra {
+    gap: 18px;
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  .banya-extra__media {
+    height: 220px;
+  }
+
+  .banya-extra__body {
+    gap: 12px;
+  }
+
+  .banya-extra__price {
+    font-size: 16px;
+  }
+
+  .banya-extra__name {
+    font-size: 28px;
+  }
+
+  .banya-extra__text {
+    font-size: 16px;
+  }
+}

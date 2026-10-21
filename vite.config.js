@@ -11,7 +11,7 @@ export default defineConfig({
       context(pagePath) {
         const path = String(pagePath).replaceAll('\\', '/')
         return {
-          home: /\/house(\/|$)/.test(path) ? '/' : '',
+          home: /\/(house|banya)(\/|$)/.test(path) ? '/' : '',
         }
       },
     }),
@@ -29,6 +29,7 @@ export default defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         house: resolve(root, 'house/index.html'),
+        banya: resolve(root, 'banya/index.html'),
       },
     },
   },

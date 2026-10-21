@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Васильевская баня — Горьковский Чан</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    {{> page-header}}
+
+    <main class="page page--banya">
+      <section class="house-hero">
+        <div class="house-hero__bg" aria-hidden="true">
+          <img src="/img/bath/image-first.png" alt="" />
+        </div>
+        <img
+          class="house-hero__mark"
+          src="/img/bg/logo.svg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="house-hero__body reveal-stagger">
+          <img
+            class="house-hero__logo reveal"
+            src="/img/bg/logo.svg"
+            alt="Горьковский Чан"
+          />
+
+          <div class="house-hero__head reveal">
+            <h1 class="h1 house-hero__title">Васильевская баня</h1>
+            <p class="house-hero__price">
+              <span class="house-hero__price-from">от</span>
+              <strong class="house-hero__price-value">6 000</strong>
+              <span class="house-hero__price-unit">руб./4 часа</span>
+            </p>
+          </div>
+
+          <p class="house-hero__text reveal">
+            Пространство для отдыха своей компанией: настоящая баня на дровах,
+            парная, зона отдыха и собственный чан на приватной территории.
+          </p>
+
+          <ul class="tags house-hero__tags reveal">
+            <li class="tags__item">русская баня на дровах</li>
+            <li class="tags__item">приватная территория</li>
+            <li class="tags__item">чан</li>
+            <li class="tags__item">пруд</li>
+            <li class="tags__item">до 6 чел.</li>
+          </ul>
+
+          <div class="house-hero__actions reveal">
+            <a class="btn btn-or" href="#booking">Забронировать баню</a>
+            <a class="btn btn-wh" href="#video">
+              <span class="btn__play" aria-hidden="true"></span>
+              Смотреть видео-обзор
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="booking reveal" id="booking" aria-hidden="true">
+        <div class="booking__box"></div>
+      </div>
+
+      <section class="museum" aria-label="Приватное пространство среди леса">
+        <div class="museum__inner">
+          <div class="museum__head">
+            <h2 class="h2 reveal">Приватное пространство среди леса</h2>
+            <header class="section-head section-head--split reveal">
+              <p class="section-head__aside">Пространство возле бани</p>
+              <div class="section-head__line" aria-hidden="true"></div>
+              <div class="section-head__text">
+                <p>
+                  Полноценная территория для отдыха своей компанией: баня, чан, пруд и зона
+                  отдыха под открытым небом. Здесь можно провести несколько часов в своем
+                  ритме, чередуя парную, купание и отдых.
+                </p>
+              </div>
+            </header>
+          </div>
+        </div>
+
+        <div class="museum__slider reveal" data-museum-slider>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <article class="exhibit swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/bath/image-first.png" alt="Настоящая русская баня" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    На территории
+                  </p>
+                  <h3 class="h3 exhibit__name">Настоящая русская баня</h3>
+                  <div class="exhibit__text">
+                    <p>Традиционная русская баня из 200-летнего бревна</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="exhibit swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/bg/par.jpg" alt="Волшебный банный чан" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    На территории
+                  </p>
+                  <h3 class="h3 exhibit__name">Волшебный банный чан</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      Установленным так, что создаётся ощущение купания в лесном пруду.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="exhibit swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/houses/diner.png" alt="Лесной пруд" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    На территории
+                  </p>
+                  <h3 class="h3 exhibit__name">Лесной пруд</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      После парной можно окунуться в прохладную воду — свой ритм,
+                      своя компания, без посторонних.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="exhibit swiper-slide">
+                <div class="exhibit__media">
+                  <img src="/img/houses/XXXL-3.png" alt="Зона отдыха" />
+                </div>
+                <div class="exhibit__body">
+                  <p class="exhibit__tag">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    На территории
+                  </p>
+                  <h3 class="h3 exhibit__name">Зона отдыха</h3>
+                  <div class="exhibit__text">
+                    <p>
+                      Место под открытым небом, где можно перевести дух между заходами
+                      в парную и чан.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="slider-nav slider-nav--prev"
+            type="button"
+            data-museum-prev
+            aria-label="Предыдущий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="slider-nav slider-nav--next"
+            type="button"
+            data-museum-next
+            aria-label="Следующий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="museum" aria-label="Баня, созданная для настоящего отдыха">
+        <div class="museum__inner">
+          <header class="section-head museum__head reveal">
+            <h2 class="h2 section-head__title">Баня, созданная для настоящего отдыха</h2>
+          </header>
+
+          <div class="museum__intro reveal">
+            <p>
+              Внутри — натуральное дерево, мох, камень и мягкий свет. Пространство продумано
+              так, чтобы между заходами в парную можно было спокойно отдыхать, общаться и
+              восстанавливаться.
+            </p>
+          </div>
+
+          <ul class="tags tags--fill reveal">
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/parnaya.svg" alt="" />
+              парная
+            </li>
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/komnata-otdiha.svg" alt="" />
+              комната отдыха
+            </li>
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/dush.svg" alt="" />
+              санузел с душевой
+            </li>
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/pol.svg" alt="" />
+              теплый пол
+            </li>
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/ventilyacia.svg" alt="" />
+              продуманная вентиляция
+            </li>
+            <li class="tags__item">
+              <img class="tags__icon" src="/img/icon/neskolko-rejimov.svg" alt="" />
+              несколько режимов освещения
+            </li>
+          </ul>
+        </div>
+
+        <div class="house-gallery__slider reveal" data-house-gallery>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="house-gallery__media">
+                  <img src="/img/houses/XXXL-2.png" alt="Интерьер бани" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="house-gallery__media">
+                  <img src="/img/houses/XXXL-3.png" alt="Комната отдыха" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="house-gallery__media">
+                  <img src="/img/houses/XXXL-4.png" alt="Зона спа" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="house-gallery__media">
+                  <img src="/img/bg/par.jpg" alt="Парная" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="house-gallery__media">
+                  <img src="/img/bath/image-first.png" alt="Васильевская баня" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="slider-nav slider-nav--prev"
+            type="button"
+            data-house-gallery-prev
+            aria-label="Предыдущий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="slider-nav slider-nav--next"
+            type="button"
+            data-house-gallery-next
+            aria-label="Следующий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="story story--light" aria-label="Парная">
+        <h2 class="h2 story__heading reveal">Парная – сердце Васильевской бани</h2>
+
+        <div class="story__inner">
+          <div class="story__tall reveal reveal--left">
+            <img src="/img/bath/XXXL-4.png" alt="Парная Васильевской бани" />
+          </div>
+
+          <div class="story__stack reveal">
+            <div class="story__shot">
+              <img src="/img/bath/XXXL-2.png" alt="Русская печь в парной" />
+            </div>
+            <div class="story__shot">
+              <img src="/img/bath/XXXL-3.png" alt="Парение вениками" />
+            </div>
+          </div>
+
+          <div class="story__content reveal reveal--right">
+            <div class="story__lead">
+              <p>
+                В парной установлена традиционная русская печь из отобранного камня и
+                натуральной глины. Высокие потолки и система вентиляции обеспечивают
+                постоянный приток воздуха, а несколько режимов освещения позволяют менять
+                атмосферу под настроение.
+              </p>
+            </div>
+
+            <h3 class="h2">Особенности парной</h3>
+
+            <div class="content">
+              <ul>
+                <li>русская печь на дровах;</li>
+                <li>лёгкий мягкий пар;</li>
+                <li>высокие потолки и хорошая вентиляция;</li>
+                <li>яркое, приглушённое и ночное освещение;</li>
+                <li>гигиеническая уборка после каждого гостя.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banya-video" id="video" aria-label="Видео-обзор">
+        <div class="banya-video__bg" aria-hidden="true">
+          <img src="/img/bath/bath.png" alt="" />
+        </div>
+
+        <div class="banya-video__inner reveal-stagger">
+          <h2 class="h2 banya-video__title reveal">
+            Видео-обзор<br />
+            Васильевской бани
+          </h2>
+
+          <a class="btn btn-or banya-video__action reveal" href="#">
+            <span class="btn__play" aria-hidden="true"></span>
+            Смотреть видео-обзор
+          </a>
+        </div>
+      </section>
+
+      <section class="banya-extras" aria-label="Дополнения к банному дню">
+        <div class="banya-extras__inner">
+          <h2 class="h2 banya-extras__title reveal">Можно добавить к банному дню</h2>
+        </div>
+
+        <div class="banya-extras__slider reveal" data-banya-extras>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <article class="banya-extra swiper-slide">
+                <div class="banya-extra__media">
+                  <img src="/img/bg/par.jpg" alt="Парение с пармастером" />
+                </div>
+                <div class="banya-extra__body">
+                  <p class="banya-extra__price">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    От 10 000 руб./2 часа
+                  </p>
+                  <h3 class="h3 banya-extra__name">Парение с пармастером</h3>
+                  <div class="content banya-extra__text">
+                    <p>
+                      Сертифицированный пармастер проведёт вас через весь банный
+                      процесс: от подготовки парной до завершения парения, подбирая
+                      температуру и интенсивность под ваше состояние.
+                    </p>
+                    <p class="banya-extra__lead">На выбор:</p>
+                    <ul>
+                      <li>аромапарение;</li>
+                      <li>массажное парение вениками;</li>
+                      <li>контрастные высокотемпературные парения;</li>
+                      <li>пенно-веничный массаж.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="banya-extra swiper-slide">
+                <div class="banya-extra__media">
+                  <img src="/img/bath/XXXL-3.png" alt="Массаж" />
+                </div>
+                <div class="banya-extra__body">
+                  <p class="banya-extra__price">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    От 4 000 руб./1 час
+                  </p>
+                  <h3 class="h3 banya-extra__name">Массаж</h3>
+                  <div class="content banya-extra__text">
+                    <p>
+                      Расслабляющие телесные практики от нашего мастера Миры. Мягкая
+                      работа через контакт и ощущения помогает замедлиться, снять
+                      напряжение и переключиться из головы в тело.
+                    </p>
+                    <p class="banya-extra__lead">Подойдёт, чтобы:</p>
+                    <ul>
+                      <li>снять напряжение;</li>
+                      <li>расслабиться после дороги;</li>
+                      <li>восстановиться после активного отдыха;</li>
+                      <li>просто побыть в тишине и заботе о себе.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="banya-extra swiper-slide">
+                <div class="banya-extra__media">
+                  <img src="/img/bath/XXXL-2.png" alt="Красивый чан" />
+                </div>
+                <div class="banya-extra__body">
+                  <p class="banya-extra__price">
+                    <span class="exhibit__dot" aria-hidden="true"></span>
+                    От 1 000 руб.
+                  </p>
+                  <h3 class="h3 banya-extra__name">Красивый чан</h3>
+                  <div class="content banya-extra__text">
+                    <p>
+                      Украсим чан к вашему приезду: пихтой, травами и цитрусами,
+                      лепестками роз или может быть резиновыми уточками?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="slider-nav slider-nav--prev"
+            type="button"
+            data-banya-extras-prev
+            aria-label="Предыдущий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="slider-nav slider-nav--next"
+            type="button"
+            data-banya-extras-next
+            aria-label="Следующий слайд"
+          >
+            <svg class="slider-nav-icon" width="18" height="30" viewBox="0 0 18 30" fill="none" aria-hidden="true">
+              <path d="M2 15L15 2" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 15L15.5 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="banya-promo" aria-label="Забронировать баню">
+        <div class="banya-promo__bg" aria-hidden="true">
+          <img src="/img/bath/banya.png" alt="" />
+        </div>
+
+        <div class="banya-promo__inner reveal-stagger">
+          <h2 class="h2 banya-promo__title reveal">Васильевская баня</h2>
+
+          <ul class="tags banya-promo__tags reveal">
+            <li class="tags__item">русская баня на дровах</li>
+            <li class="tags__item">приватная территория</li>
+            <li class="tags__item">2 чана</li>
+            <li class="tags__item">до 6 чел.</li>
+          </ul>
+
+          <div class="banya-promo__prices reveal">
+            <p>6 000 ₽ для гостей домов</p>
+            <p>12 000 ₽ за банный день без проживания</p>
+          </div>
+
+          <a class="btn btn-or banya-promo__action reveal" href="#booking">
+            Забронировать баню
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/bar.js"></script>
+    <script type="module" src="/src/js/reveal.js"></script>
+    <script type="module" src="/src/js/museum.js"></script>
+    <script type="module" src="/src/js/house-gallery.js"></script>
+    <script type="module" src="/src/js/banya-extras.js"></script>
+  </body>
+</html>
