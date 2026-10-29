@@ -58,7 +58,7 @@
   left: 50%;
   z-index: 1;
   gap: 12px;
-  transform: translate(-50%, -50%);
+  translate: 0 -50%;
 }
 
 @media (max-width: 1399px) {
@@ -87,7 +87,7 @@
 
   .banya-video__action {
     position: static;
-    transform: none;
+    translate: none;
   }
 }
 
@@ -115,7 +115,7 @@
 
   .banya-video__action {
     position: static;
-    transform: none;
+    translate: none;
     width: 100%;
   }
 }
