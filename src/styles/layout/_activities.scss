@@ -57,7 +57,8 @@
 .activity__media {
   width: 100%;
   min-width: 0;
-  height: 460px;
+  aspect-ratio: 720 / 460;
+  flex-shrink: 0;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -193,10 +194,6 @@
     gap: 18px;
   }
 
-  .activity__media {
-    height: 280px;
-  }
-
   .activity__name {
     font-size: 28px;
   }
@@ -239,10 +236,6 @@
 
   .activity {
     gap: 14px;
-  }
-
-  .activity__media {
-    height: 220px;
   }
 
   .activity__body {

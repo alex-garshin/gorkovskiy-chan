@@ -62,6 +62,11 @@
     margin-right: -16px;
   }
 
+  .house-more__slider .slider-nav--next {
+    // The slider extends 16px beyond the section's right padding.
+    right: 24px;
+  }
+
   .house-more__action {
     margin-top: 28px;
   }

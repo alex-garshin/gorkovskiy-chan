@@ -24,7 +24,7 @@
 }
 
 .house-gallery__media {
-  height: 660px;
+  aspect-ratio: 733 / 660;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -43,7 +43,6 @@
   }
 
   .house-gallery__media {
-    height: 480px;
     border-radius: 16px;
   }
 }
@@ -54,7 +53,6 @@
   }
 
   .house-gallery__media {
-    height: 320px;
     border-radius: 15px;
   }
 }
